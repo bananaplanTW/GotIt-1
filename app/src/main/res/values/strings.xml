@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">GotIt</string>
     <string name="action_settings">Settings</string>
+
+    <string name="got_it_tab_text">Got it!</string>
+    <string name="events_tab_text">Events</string>
+    <string name="friends_tab_text">Friends</string>
 </resources>

@@ -7,15 +7,21 @@ import android.view.MenuItem;
 
 import com.bananaplan.gotit.R;
 
-
 public class GotItMainActivity extends ActionBarActivity {
+
+    private UIController mUIController;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_got_it_main);
+        initialize();
+        mUIController.onActivityCreate(savedInstanceState);
     }
 
+    private void initialize() {
+        mUIController = new UIController(this);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
